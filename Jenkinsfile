@@ -22,7 +22,7 @@ pipeline {
         stage('Push Docker Image to Dockerhub') {
             steps {
                 echo "Pushing Docker image to Dockerhub..."
-                bat "docker tag playlist jyothi1237/calorie_count"
+                bat "docker tag calorie jyothi1237/calorie_count"
                 bat "docker push jyothi1237/calorie_count"
             }
         }
