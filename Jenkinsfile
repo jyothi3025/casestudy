@@ -37,7 +37,7 @@ pipeline {
         stage('Restart Deployment') {
             steps {
                 echo "Restarting Deployment to pick up new image..."
-                bat "kubectl rollout restart deployment/playlist-deployment"
+                bat "kubectl rollout restart deployment/calorie-deployment"
             }
         }
     }
